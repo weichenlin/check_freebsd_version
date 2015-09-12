@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/bin/env -S php -d allow_url_fopen=1 -d disable_functions=""
 <?php
 
 if (!extension_loaded("openssl")) {
@@ -31,3 +31,6 @@ if ($newVersion === $uVersion) {
     echo "new version $newVersion available, current version $uVersion\n";
     exit(2);
 }
+
+// todo: add unsupported check
+// https://www.freebsd.org/security/unsupported.html
