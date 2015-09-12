@@ -1,4 +1,4 @@
-#!/usr/bin/env -S php -d allow_url_fopen=1 -d disable_functions=""
+#!/usr/local/bin/php -d allow_url_fopen=1 -d disable_functions=""
 <?php
 
 if (!extension_loaded("openssl")) {
